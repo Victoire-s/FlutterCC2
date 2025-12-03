@@ -23,7 +23,6 @@ class SliderFormField extends FormField<double> {
             return Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                // Label + valeur actuelle
                 Text('$label : ${value.toStringAsFixed(0)}'),
 
                 Slider(
@@ -37,7 +36,6 @@ class SliderFormField extends FormField<double> {
                   },
                 ),
 
-                // Message d’erreur du FormField si besoin
                 if (state.hasError)
                   Text(
                     state.errorText!,
